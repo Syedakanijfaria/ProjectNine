@@ -13,6 +13,7 @@ const Courses = () => {
     }, [])
 
     return (
+        // fake data_2 loading container
         <div className="courses">
             <div className=" m-5 p-5">
                 <h2 className="text-center text-decoration-underline mb-5">Our Courses</h2>

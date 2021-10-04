@@ -19,6 +19,7 @@ const Footer = () => {
                 <div className="row">
                     <div className="col-md-4">
                         <div className="left-container h-50">
+                            {/* fake daat_3 loading container */}
                             <h3>Popular courses</h3>
                             {data.map((data) =>
                                 <div className="col gap">
@@ -40,6 +41,7 @@ const Footer = () => {
                                 </div >)}
                         </div>
                     </div>
+                    {/* Usefull link in footer */}
                     <div className="col-md-4 ps-5">
                         <div className="middle-container">
                             <h3>Usefull Links</h3>
@@ -52,6 +54,7 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
+                    {/* important contact information */}
                     <div className="col-md-4">
                         <div className="right-container">
                             <h3>Contact Us</h3>
@@ -64,6 +67,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <hr></hr>
+                {/* social links */}
                 <div className="text-center">
                     <h5>Social links</h5>
                     <i class="fab fa-facebook-square pe-2"></i>

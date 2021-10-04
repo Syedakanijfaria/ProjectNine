@@ -6,6 +6,7 @@ const Details = (props) => {
     const { name, img, des, price, key } = props.data || {};
 
     return (
+        // details designing for fake data loading
         <div className="col">
             < div className="card h-100" >
                 <img src={img} className="card-img-top img" alt="" />

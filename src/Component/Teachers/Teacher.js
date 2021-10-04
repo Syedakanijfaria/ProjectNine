@@ -16,6 +16,7 @@ const Teacher = () => {
             <div className="row">
                 <div className="col">
                     <h3 className="text-center text-decoration-underline mt-5 mb-5">Our Teachers</h3>
+                    {/* fake person loading caontainer */}
                     <div className="row row-cols-1 row-cols-md-2 m-auto g-5">
                         {data.map((data) =>
                             <div className="col">
