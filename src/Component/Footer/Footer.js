@@ -1,5 +1,5 @@
 import React from 'react';
-import Courses from '../Courses/Courses.js';
+import Details from '../Details/Details.js';
 import './Footer.css';
 
 const Footer = () => {
@@ -10,7 +10,9 @@ const Footer = () => {
                     <div className="col-md-4">
                         <div className="left-container text-start">
                             <h3>Popular courses</h3>
-                            <Courses></Courses>
+                            <div className="popular">
+                                <Details style={{ height: "200px" }}></Details>
+                            </div>
                         </div>
                     </div>
                     <div className="col-md-4">

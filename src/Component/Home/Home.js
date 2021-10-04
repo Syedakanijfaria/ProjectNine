@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Courses from '../Courses/Courses.js';
+import Details from '../Details/Details.js';
 import './Home.css';
 
 const Home = () => {
@@ -11,6 +11,7 @@ const Home = () => {
             .then(res => res.json())
             .then(data => setdata(data));
     }, [])
+
     return (
         <div className="home">
             <div className="row m-5 p-5">
@@ -22,7 +23,7 @@ const Home = () => {
                     </Link>
                 </div>
                 <div className="col-md-6">
-                    <img className="w-75 mx-auto d-block" src="https://quotefancy.com/media/wallpaper/3840x2160/1699923-Steve-Jobs-Quote-Learn-continually-There-s-always-one-more-thing.jpg" />
+                    <img className="w-75 mx-auto d-block" src="https://quotefancy.com/media/wallpaper/3840x2160/1699923-Steve-Jobs-Quote-Learn-continually-There-s-always-one-more-thing.jpg" alt="" />
                 </div>
             </div>
             <div className=" m-5 p-5">
@@ -30,7 +31,7 @@ const Home = () => {
                 <div className="row">
                     <div className="col">
                         <div className="row row-cols-1 row-cols-md-2 g-4">
-                            {data.map(data => <Courses key={data.key} data={data.length}></Courses>)}
+                            {data.map((data) => <Details key={data.key}></Details>)}
                         </div>
                     </div>
                 </div>

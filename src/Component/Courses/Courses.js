@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Details from '../Details/Details.js';
 import "./Courses.css";
 
-const Courses = (props) => {
+const Courses = () => {
     const [data, setdata] = useState([]);
 
     useEffect(() => {
@@ -11,28 +12,22 @@ const Courses = (props) => {
             .then(data => setdata(data));
     }, [])
 
-    const { name, img, des, price, key } = props.data || {};
-
     return (
         <div className="courses">
-            {data.map((data) => (
-                <div className="col">
-                    <div className="card h-100">
-                        <img src={img} className="card-img-top img " alt="..." />
-                        <div className="card-body">
-                            <h3 className="card-title">{name}</h3>
-                            <p className="card-text">{des}</p>
-                            <Link to="/courses">
-                                <button className="btn btn-outline-warning">Learn More</button>
-                            </Link>
-                        </div>
-                        <div className="card-footer d-md-flex">
-                            <h4>Per lesson: $ {price}</h4>
-                            <button className="button btn btn-warning me-md-2">Enroll</button>
+            <div className=" m-5 p-5">
+                <h1 className="text-center text-decoration-underline">Our Courses</h1>
+                <div className="row">
+                    <div className="col">
+                        <div className="row row-cols-1 row-cols-md-2 g-4">
+                            {data.map((data) =>
+                                <Details key={data.key}></Details>)}
                         </div>
                     </div>
                 </div>
-            ))}
+                <Link to="/courses">
+                    <button type="button" className=" mt-5 button btn btn-outline-warning">View All Courses</button>
+                </Link>
+            </div>
         </div>
     );
 };
