@@ -26,5 +26,19 @@
         "des": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
         "img": "https://minnesota.cbslocal.com/wp-content/uploads/sites/15909630/2013/07/dance.jpg",
         "price": 85
+    },
+    {
+        "key": "B009",
+        "name": "Language School",
+        "des": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+        "img": "https://st2.depositphotos.com/1018611/11767/i/950/depositphotos_117670040-stock-photo-kids-greeting-in-different-languages.jpg",
+        "price": 50
+    },
+    {
+        "key": "B003",
+        "name": "Music School",
+        "des": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+        "img": "https://scoopempire.com/wp-content/uploads/2019/03/ask-the-teacher-february-2017.jpeg",
+        "price": 90
     }
 ]
