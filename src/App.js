@@ -29,7 +29,7 @@ function App() {
           <Route exact path="/about">
             <About></About>
           </Route>
-          <Route path="">
+          <Route path="*">
             <NotFound></NotFound>
           </Route>
         </Switch>

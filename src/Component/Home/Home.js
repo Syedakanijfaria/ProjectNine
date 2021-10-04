@@ -39,7 +39,18 @@ const Home = () => {
                     <button type="button" className=" mt-5 button btn btn-outline-warning">View All Courses</button>
                 </Link>
             </div>
-        </div>
+            <div className="Login m-5 p-5">
+                <div style={{ height: "300px" }}
+                    className="container d-flex justify-content-center align-items-center rounded-3" id="subscribe">
+                    <div>
+                        <h1>LET'S STAY IN TOUCH</h1>
+                        <p>Get Updates on something more</p>
+                        <input className="form-control" type="text" placeholder="Your Email" />
+                        <button type="button" className="mt-2 button btn btn-warning"> Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div >
     );
 };
 

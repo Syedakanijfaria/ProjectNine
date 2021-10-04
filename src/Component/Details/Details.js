@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const Details = (props) => {
     const { name, img, des, price, key } = props.data || {};
+
     return (
         <div className="col">
             < div className="card h-100" >
