@@ -27,7 +27,7 @@ const Home = () => {
                 </div>
             </div>
             <div className=" m-5 p-5">
-                <h1>Our Courses</h1>
+                <h2 className="text-center text-decoration-underline mt-5 mb-5">Our Courses</h2>
                 <div className="row">
                     <div className="col">
                         <div className="row row-cols-1 row-cols-md-2 g-4">
