@@ -2,3 +2,9 @@
     display: block;
     margin: auto;
 }
+.btncolor:hover{
+    background-color:#ffc107;
+}
+.Login{
+    background-color: #ebb000;
+}

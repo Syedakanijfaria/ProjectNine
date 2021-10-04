@@ -27,7 +27,7 @@ const Home = () => {
                 </div>
             </div>
             <div className=" m-5 p-5">
-                <h1 className="text-center text-decoration-underline">Our Courses</h1>
+                <h1>Our Courses</h1>
                 <div className="row">
                     <div className="col">
                         <div className="row row-cols-1 row-cols-md-2 g-4">
@@ -35,18 +35,32 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <Link to="/courses">
-                    <button type="button" className=" mt-5 button btn btn-outline-warning">View All Courses</button>
-                </Link>
+                <div className="text-center">
+                    <Link to="/Courses">
+                        <button className="mt-5 btn btn-outline-warning">View All Courses</button></Link>
+                </div>
             </div>
-            <div className="Login m-5 p-5">
+
+            <div className="Login mb-5" id="login">
                 <div style={{ height: "300px" }}
                     className="container d-flex justify-content-center align-items-center rounded-3" id="subscribe">
                     <div>
                         <h1>LET'S STAY IN TOUCH</h1>
                         <p>Get Updates on something more</p>
-                        <input className="form-control" type="text" placeholder="Your Email" />
-                        <button type="button" className="mt-2 button btn btn-warning"> Submit</button>
+                        <form className="row g-3">
+                            <div className="col-auto">
+                                <label for="inputPassword2" className="visually-hidden">Password</label>
+                                <input className="form-control" type="text" placeholder="Your Email" />
+                            </div>
+                            <div class="col-auto">
+                                <input type="password" className="form-control" id="inputPassword2" placeholder="Password" />
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" className=" button btn btn-dark"> Submit</button>
+                            </div>
+                        </form>
+
+
                     </div>
                 </div>
             </div>
