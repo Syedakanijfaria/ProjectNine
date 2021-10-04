@@ -2,7 +2,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.css';
-import logo from "../..//Image/logo/logo.jpg";
+import logo from "../..//Image/logo/logo.png";
 
 const Header = () => {
     return (
@@ -10,9 +10,9 @@ const Header = () => {
             <nav>
                 <div className="row">
                     <div className="col-md-2">
-                        <div className="logo-img">
-                            <img className="w-75" src={logo} alt="" />
-                            <h1>EduPack</h1>
+                        <div className="logo-img ">
+                            <img className="w-50" src={logo} alt="" />
+                            <h1 className="m-auto">EduPack</h1>
                         </div>
                     </div>
                     <div className="col-md-10">
