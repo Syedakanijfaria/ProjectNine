@@ -31,7 +31,7 @@ const Home = () => {
                 <div className="row">
                     <div className="col">
                         <div className="row row-cols-1 row-cols-md-2 g-4">
-                            {data.map((data) => <Details key={data.key}></Details>)}
+                            {data.map((data) => <Details key={data.key} data={data}></Details>)}
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Details.css";
 
 const Details = (props) => {
     const { name, img, des, price, key } = props.data || {};

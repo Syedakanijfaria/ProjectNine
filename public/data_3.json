@@ -1,0 +1,16 @@
+[
+    {
+        "key": "B002",
+        "name": "Fashion School",
+        "des": "Lorem ipsum is placeholder text commonly used in the graphic.",
+        "img": "https://www.jetss.com/wp-content/uploads/2021/01/Fashion-School.jpg",
+        "price": 100
+    },
+    {
+        "key": "B008",
+        "name": "Dance School",
+        "des": "Lorem ipsum is placeholder text commonly used in the graphic.",
+        "img": "https://minnesota.cbslocal.com/wp-content/uploads/sites/15909630/2013/07/dance.jpg",
+        "price": 85
+    }
+]

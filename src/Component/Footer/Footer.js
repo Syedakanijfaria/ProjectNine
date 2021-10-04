@@ -1,21 +1,46 @@
-import React from 'react';
-import Details from '../Details/Details.js';
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
+    const [data, setdata] = useState([]);
+    //const dataSlice = data.slice(-2);
+
+    useEffect(() => {
+        fetch('./data_3.json')
+            .then(res => res.json())
+            .then(data => setdata(data));
+    }, [])
+
+    console.log(data.slice(-2));
     return (
         <div className="footer">
             <div className="footer-container">
                 <div className="row">
                     <div className="col-md-4">
-                        <div className="left-container">
+                        <div className="left-container h-50">
                             <h3>Popular courses</h3>
-                            <div className="popular">
-                                <Details style={{ height: "200px" }}></Details>
-                            </div>
+                            {data.map((data) =>
+                                <div className="col gap">
+                                    <div className="card">
+                                        <div className="row g-0">
+                                            <div className="col-md-4">
+                                                <img src={data.img} className="img-fluid" alt="" />
+                                            </div>
+                                            <div className="col-md-8">
+                                                <div className="card-body">
+                                                    <h5 className="card-title">{data.name}</h5>
+                                                    <Link to="/courses">
+                                                        <button className="btn btn-outline-warning btn-sm">Learn More</button>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div >
+                                    </div>
+                                </div >)}
                         </div>
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-4 ps-5">
                         <div className="middle-container">
                             <h3>Usefull Links</h3>
                             <ul>
@@ -38,7 +63,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <hr></hr>
-                <p><small>©2021 edupack. All rights reserved</small> </p>
+                <p className="text-center"><small>©2021 edupack. All rights reserved</small></p>
             </div>
         </div >
     );
