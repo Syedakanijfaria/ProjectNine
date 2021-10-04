@@ -10,7 +10,7 @@ const Teacher = () => {
             .then(data => setdata(data));
     }, [])
 
-    console.log(data.slice(-2));
+    //console.log(data.slice(-2));
     return (
         <div className="teacher">
             <div className="row">

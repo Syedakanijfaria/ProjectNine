@@ -1,4 +1,3 @@
-//import { logDOM } from '@testing-library/dom';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.css';
@@ -25,7 +24,6 @@ const Header = () => {
                                 <NavLink to="/teacher">Teacher</NavLink>
                                 <a href="#login">Login</a>
                                 <NavLink to="/about">About</NavLink>
-
                             </ul>
                         </div>
                     </div>

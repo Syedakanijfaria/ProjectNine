@@ -52,13 +52,13 @@ const Home = () => {
                         <p>Get Updates on Educational services</p>
                         <form className="row g-3">
                             <div className="col-auto">
-                                <label for="inputPassword2" className="visually-hidden">Password</label>
+                                <label className="visually-hidden">Password</label>
                                 <input className="form-control" type="text" placeholder="Your Email" />
                             </div>
-                            <div class="col-auto">
+                            <div className="col-auto">
                                 <input type="password" className="form-control" id="inputPassword2" placeholder="Password" />
                             </div>
-                            <div class="col-auto">
+                            <div className="col-auto">
                                 <button type="submit" className=" button btn btn-dark"> Submit</button>
                             </div>
                         </form>
