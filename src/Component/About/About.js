@@ -4,7 +4,8 @@ const About = () => {
     return (
         <div className="about">
             <h1 className="text-center text-decoration-underline mt-5">About Us</h1>
-            <p className="text-center">Tempus quam pellentesque nec nam aliquam sem et tortor. In dictum non consectetur a erat nam at lectus. Lorem ipsum dolor sit amet consectetur adipiscing. Nibh nisl condimentum id venenatis a. In nulla posuere sollicitudin aliquam. Et egestas quis ipsum suspendisse ultrices gravida.</p>
+            <p className="text-center">Tempus quam pellentesque nec nam aliquam sem et tortor. In dictum non consectetur a erat nam at lectus. Lorem ipsum dolor sit amet consectetur adipiscing. Nibh nisl condimentum id venenatis a. In nulla posuere sollicitudin aliquam. Et egestas quis ipsum suspendisse ultrices gravida.Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis montes, nascetur ridiculus mus. Sed vitae rutrum neque.
+            </p>
             <div className="">
                 <h3 className="text-center text-decoration-underline mt-5">Why students love EduPack ?</h3>
                 <div className="row">

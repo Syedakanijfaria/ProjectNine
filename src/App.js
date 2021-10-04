@@ -6,6 +6,7 @@ import Footer from './Component/Footer/Footer.js';
 import Header from './Component/Header/Header.js';
 import Home from './Component/Home/Home.js';
 import NotFound from './Component/NotFound/NotFound.js';
+import Teacher from './Component/Teachers/Teacher.js';
 
 function App() {
   return (
@@ -19,13 +20,16 @@ function App() {
           <Route exact path="/home">
             <Home></Home>
           </Route>
-          <Route exact path="/about">
-            <About></About>
-          </Route>
           <Route exact path="/courses">
             <Courses></Courses>
           </Route>
-          <Route exact path="*">
+          <Route exact path="/teacher">
+            <Teacher></Teacher>
+          </Route>
+          <Route exact path="/about">
+            <About></About>
+          </Route>
+          <Route path="">
             <NotFound></NotFound>
           </Route>
         </Switch>
