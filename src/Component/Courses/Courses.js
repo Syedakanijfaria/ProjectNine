@@ -25,9 +25,11 @@ const Courses = () => {
                         </div>
                     </div>
                 </div>
-                <Link to="/courses">
-                    <button type="button" className=" mt-5 button btn btn-outline-warning">View All Courses</button>
-                </Link>
+                <div className="text-center">
+                    <Link to="/courses">
+                        <button className=" mt-5 btn btn-outline-warning">View All Courses</button>
+                    </Link>
+                </div>
             </div>
         </div>
     );

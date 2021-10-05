@@ -59,7 +59,7 @@ const Home = () => {
                                 <input type="password" className="form-control" id="inputPassword2" placeholder="Password" />
                             </div>
                             <div className="col-auto">
-                                <button type="submit" className=" button btn btn-dark"> Submit</button>
+                                <button type="submit" className="btn btn-dark"> Submit</button>
                             </div>
                         </form>
                     </div>
