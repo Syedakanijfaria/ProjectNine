@@ -12,7 +12,7 @@ const Header = () => {
                     <div className="col-md-2">
                         <div className="logo-img ">
                             <img className="w-50" src={logo} alt="" />
-                            <h1 className="m-auto">EduPack</h1>
+                            <h1 className="m-auto">EduPack Learning</h1>
                         </div>
                     </div>
                     {/* header nav link */}
